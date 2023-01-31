@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --mainColor: #43d297;
+  --mainColorLight: #4aeba8;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mainColor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mainColorLight);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+  margin-bottom: 50px;
+}
+
+.headerBrand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerBrand img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.headerButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.headerButtons a {
+  text-decoration: none;
+  color: var(--mainColor);
+  font-size: 20px;
+}
+
+#menuButton {
+  display: none;
+  height: 40px;
+  width: 40px;
+}
+
+.headerMobileContent {
+  display: none;
+  flex-flow: column;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #43d297;
+  z-index: 100;
+  gap: 40px;
+}
+
+.closeMobileHeader {
+  fill: white;
+  height: 50px;
+  width: 50px;
+}
+
+.closeMobileHeader {
+  cursor: pointer;
+}
+
+.headerMobileContent a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  margin-bottom: 200px;
+}
+
+.title img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.infoAboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  gap: 40px;
+  margin-bottom: 200px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.infoBox {
+  width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.infoBox:hover {
+  background-color: var(--mainColor);
+  color: white;
+  transition: all 350ms;
+}
+
+footer {
+  background-color: var(--mainColor);
+  padding: 150px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyRightNotice {
+  text-align: center;
+  margin-top: 100px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footerRows {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.footerRow {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+}
+
+.footerRow p {
+  font-weight: 600;
+}
+
+.footerRow a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1050px) {
+  header {
+    gap: 200px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  header {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-flow: wrap;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footerRows {
+    flex-flow: wrap;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .headerBrand h1 {
+    font-size: 25px;
+  }
+
+  .headerButtons {
+    display: none;
+  }
+
+  #menuButton {
+    display: flex;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .headerBrand h1 {
+    font-size: 21px;
+  }
+}
